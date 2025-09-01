@@ -7,7 +7,7 @@ from rest_framework import status
 
 
 @api_view(['GET'])
-def endpoint_a(request):c
+def endpoint_a(request):
     """
     Endpoint A - Returns a simple message.
     """
