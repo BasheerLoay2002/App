@@ -11,7 +11,7 @@ def endpoint_a(request):
     """
     Endpoint A - Returns a simple message.
     """
-    return Response("Hello from endpoint a!", status=status.HTTP_200_OK)
+    return Response("Hola from endpoint a!", status=status.HTTP_200_OK)
 
 
 @api_view(['GET'])
