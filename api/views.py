@@ -8,7 +8,7 @@ from rest_framework import status
 # creating a health check endpoint
 @api_view(['GET'])
 def health(request):
-    return Response("OK", status=status.HTTP_200_OK)
+    return Response("200 OK", status=status.HTTP_200_OK)
 
 
 @api_view(['GET'])
