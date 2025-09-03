@@ -32,4 +32,4 @@ def endpoint_c(request):
     """
     Endpoint C - Returns a simple message.
     """
-    return Response("Hello from endpoint c         !", status=status.HTTP_200_OK)
+    return Response("Hello from endpoint c!", status=status.HTTP_200_OK)
