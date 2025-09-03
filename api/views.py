@@ -5,13 +5,18 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
+# creating a health check endpoint
+@api_view(['GET'])
+def health(request):
+    return Response("OK", status=status.HTTP_200_OK)
+
 
 @api_view(['GET'])
 def endpoint_a(request):
     """
     Endpoint A - Returns a simple message.
     """
-    return Response("--> Really mad ):( from endpoint a!", status=status.HTTP_200_OK)
+    return Response("Really mad, from endpoint a! Hola!", status=status.HTTP_200_OK)
 
 
 @api_view(['GET'])
